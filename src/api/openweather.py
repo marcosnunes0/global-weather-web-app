@@ -32,7 +32,8 @@ def get_climate_for_location(city):
     params = {
         'appid': token,
         'q': city,
-        'units': 'metric'
+        'units': 'metric',
+        'lang': 'en'
     }
     
     climate_data = make_request(url=url, params=params)
